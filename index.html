@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="question__container" id="question__container">
+
+        <h1 class="question__title">Тестирование</h1>
+        
+        <div class="question__block-grey">
+
+            <h2 id='question__question-text' class="question__question-text">
+                Текст вопроса
+            </h2>
+
+            <p class="question__p-variants">
+                <input type="radio" id="radio_1" name="question__radio-variants" class="question__radio-variants" value="1">
+                <label for="radio_1" class="question__radio-label"></label>
+                <span class="question__variants-text"> Вариант 1</span>
+            </p>
+
+            <p class="question__p-variants">
+                <input type="radio" id="radio_2" name="question__radio-variants" class="question__radio-variants" value="2">
+                <label for="radio_2" class="question__radio-label"></label>
+                <span class="question__variants-text"> Вариант 2</span>
+            </p>
+
+            <p class="question__p-variants">
+                <input type="radio" id="radio_3" name="question__radio-variants" class="question__radio-variants" value="3">
+                <label for="radio_3" class="question__radio-label"></label>
+                <span class="question__variants-text"> Вариант 3</span>
+            </p>
+
+            <p class="question__p-variants">
+                <input type="radio" id="radio_4" name="question__radio-variants" class="question__radio-variants" value="4">
+                <label for="radio_4" class="question__radio-label"></label>
+                <span class="question__variants-text"> Вариант 4</span>
+            </p>
+
+        </div>
+
+        <div class="progress-bar__container">
+
+            <div class="progress-bar__base-line">
+                <div class="progress-bar__filled-line"></div>
+            </div>
+
+            <div class="progress-bar__current-question-number"></div>
+            <div class="progress-bar__start-number">0</div>
+            <div class="progress-bar__end-number" id="progress-bar__end-number"></div>
+        </div>
+    </div>
+
+
+    <div class="results__container hidden" id="results__container">
+
+        <h1 id="results__text-title" class="results__text-title">
+            Результат
+        </h1>
+        <p id="results__correct-answers-counter" class="results__correct-answers-counter">
+            Число правильных ответов
+        </p>
+        <p id="results__text-comment" class="results__text-comment">
+            Комментарий
+        </p>
+
+        <div class="results__block-questions-list">
+            
+            <div class="results__block-question">
+                <h2 class="results__question-text">Текст вопроса</h2><br>
+                <p class="results__answer-text">Выбранный ответ</p>
+            </div>
+
+        </div>
+
+        <div class="results__btn-container">
+            <button class="results__restart-btn" id="results__restart-btn">
+                Пройти ещё раз
+            </button>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
